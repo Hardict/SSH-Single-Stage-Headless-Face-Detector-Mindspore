@@ -1,0 +1,58 @@
+{'anchor_base_sizes': [8, 16, 32],
+ 'anchor_ratios': [1.0],
+ 'anchor_scales': [[2, 4], [4, 8], [8, 16]],
+ 'anno_path': './dataset/WIDER_annotation/wider_face_train_bbx_gt.txt',
+ 'batch_size': 1,
+ 'config_path': 'C:\\Users\\Hardict\\PycharmProjects\\MS-SSH\\SSH-MindSpore\\src\\../default_config.yaml',
+ 'device_target': 'GPU',
+ 'epoch_size': 10,
+ 'expand_ratio': 1.0,
+ 'feature_shapes': [[112, 128], [56, 64], [28, 32]],
+ 'flip_ratio': 0.5,
+ 'image_dir': './dataset/WIDER_train/images/',
+ 'img_height': 896,
+ 'img_width': 1024,
+ 'keep_ratio': True,
+ 'loss_cls_weight': 1,
+ 'loss_reg_weight': 1,
+ 'loss_scale': 256,
+ 'lr': 0.001,
+ 'min_pos_iou': 0.3,
+ 'mindrecord_dir': './dataset/mindrecord/',
+ 'momentum': 0.91,
+ 'neg_iou_thr': 0.3,
+ 'num_anchors': 2,
+ 'num_bboxes': 37632,
+ 'num_expected_neg': 256,
+ 'num_expected_pos': 128,
+ 'num_gts': 128,
+ 'num_parallel_workers': 8,
+ 'pos_iou_thr': 0.7,
+ 'python_multiprocessing': True,
+ 'rpn_max_num': 1000,
+ 'rpn_min_bbox_min_size': 0,
+ 'rpn_nms_across_levels': False,
+ 'rpn_nms_post': 1000,
+ 'rpn_nms_pre': 1000,
+ 'rpn_nms_thr': 0.7,
+ 'rpn_proposal_max_num': 2000,
+ 'rpn_proposal_min_bbox_size': 0,
+ 'rpn_proposal_nms_across_levels': False,
+ 'rpn_proposal_nms_post': 2000,
+ 'rpn_proposal_nms_pre': 2000,
+ 'rpn_proposal_nms_thr': 0.7,
+ 'save_checkpoint_path': './ckpts',
+ 'test_batch_size': 1,
+ 'test_iou_thr': 0.5,
+ 'test_max_per_img': 100,
+ 'test_score_thr': 0.05,
+ 'weight_decay': 1e-05}
+Please check the above information for the configurations
+Start create dataset!
+CHECKING MINDRECORD FILES ...
+CHECKING MINDRECORD FILES DONE!
+[WARNING] ME(3656:19004,MainProcess):2023-06-18-03:19:30.514.671 [mindspore\dataset\engine\datasets.py:3519] Python multiprocessing is not supported on Windows platform.
+Create dataset done!
+[WARNING] ME(3656:19004,MainProcess):2023-06-18-03:19:30.564.671 [mindspore\nn\layer\basic.py:962] 'nn.ResizeBilinear' is deprecated from version 2.0 and will be removed in a future version, use 'ops.ResizeBilinearV2' or 'ops.interpolate' instead.
+[WARNING] ME(3656:19004,MainProcess):2023-06-18-03:19:30.719.672 [mindspore\train\model.py:1082] For LossCallBack callback, {'step_end'} methods may not be supported in later version, Use methods prefixed with 'on_train' or 'on_eval' instead when using customized callbacks.
+[WARNING] ME(3656:19004,MainProcess):2023-06-18-03:19:30.720.673 [mindspore\dataset\engine\datasets.py:3519] Python multiprocessing is not supported on Windows platform.
